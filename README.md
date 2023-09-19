@@ -13,16 +13,16 @@ Section 2 : Image, Container 소개 & 각종 Docker 명령어  및 실습
 	- 컨테이너 생성과 관리를 쉽게 해주는 것이 도커이다.
 	- 도커 컨테이너는 local 환경과 분리되어 있다.(자체 내부 네트워크도 존재함)
 	- 구조
-		------------Container1-------------------------Container2------------------------Container3------------
+		|-----------Container1------------|------------Container2-----------|------------Container3-----------|
 		|             App A               |              App B              |              App C              |
 		|---------------------------------|---------------------------------|---------------------------------|
 		| Liberaries, Dependencies, Tools | Liberaries, Dependencies, Tools | Liberaries, Dependencies, Tools |
+		|---------------------------------|---------------------------------|---------------------------------|
+		|        공통 Docker Engine       |      공통 Docker Engine         |      공통 Docker Engine          |
 		|-----------------------------------------------------------------------------------------------------|
-		|                                           Docker Engine                                             |
+		| 공통 OS Built-in / Emulated Container Support | 공통 OS Built-in / Emulated Container Support| 공통 OS Built-in / Emulated Container Support |
 		|-----------------------------------------------------------------------------------------------------|
-		|                              OS Built-in / Emulated Container Support                               |
-		|-----------------------------------------------------------------------------------------------------|
-		|                                        My Operating System                                          |
+		| 공통 My Operating System | 공통 My Operating System | 공통 My Operating System|
 		|-----------------------------------------------------------------------------------------------------|
 
 - VM 
